@@ -1,5 +1,23 @@
 {
-    "home": {
-        "title": "Home page"
+    "auth": {
+        "register": {
+            "heading": "Register at DedStream",
+            "backButtonLabel": "Already have an account? Sign in",
+            "usernameLabel": "Username",
+            "usernameDescription": "Other users will know you by this name.",
+            "displayNameLabel": "Display name",
+            "displayNameDescription": "Other users will see you by this name.",
+            "emailLabel": "Email",
+            "emailDescription": "We may use your email to send account-related notifications.",
+            "passwordLabel": "Password",
+            "passwordDescription": "Password must contain at least 8 characters.",
+            "submitButton": "Sign up",
+            "successAlertTitle": "Check your email",
+            "successAlertDescription": "A confirmation email has been sent to your email address. If you don’t see it, please check your Spam folder.",
+            "errorMessage": "Error creating account"
+        },
+        "verify": {
+            "successMessage": "Account verified"
+        }
     }
 }

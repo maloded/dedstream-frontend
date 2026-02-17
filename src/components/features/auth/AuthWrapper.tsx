@@ -37,7 +37,7 @@ export function AuthWrapper({
 					<CardTitle>{heading}</CardTitle>
 				</CardHeader>
 				<CardContent>{children}</CardContent>
-				<CardFooter className='-mt-2'>
+				<CardFooter className='-mt-2 p-1'>
 					{backButtonLabel && backButtonHref && (
 						<Button variant='ghost' className='w-full'>
 							<Link href={backButtonHref}>{backButtonLabel}</Link>
