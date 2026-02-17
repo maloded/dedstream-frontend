@@ -1,0 +1,4 @@
+{
+	"cSpell.words": ["codegen", "Dedstream", "trivago"],
+	"i18n-ally.localesPaths": ["public/languages", "src/libs/i18n"]
+}

@@ -1,0 +1,53 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Outer Shadow Layer -->
+  <path d="
+    M120 90
+    L700 90
+    L700 300
+    L580 380
+    L360 380
+    L240 460
+    L240 360
+    L120 360
+    Z
+  " fill="#0a4d1f"/>
+
+  <!-- Main Green Bubble -->
+  <path d="
+    M140 110
+    L680 110
+    L680 280
+    L560 350
+    L350 350
+    L260 420
+    L260 340
+    L140 340
+    Z
+  " fill="#0f6b2b"/>
+
+  <!-- Inner Dark Layer -->
+  <path d="
+    M165 135
+    L655 135
+    L655 260
+    L540 325
+    L370 325
+    L285 390
+    L285 315
+    L165 315
+    Z
+  " fill="#083d18"/>
+
+  <!-- Text -->
+  <text x="270" y="270"
+        font-family="Arial Black, Impact, sans-serif"
+        font-size="140"
+        font-weight="900"
+        fill="#f2f2f2"
+        stroke="#083d18"
+        stroke-width="8">
+    DED
+  </text>
+
+</svg>
