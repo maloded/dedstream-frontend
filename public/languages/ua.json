@@ -34,6 +34,27 @@
             "submitButton": "Увійти",
             "successMessage": "Ви успішно увійшли",
             "errorMessage": "Помилка під час входу"
+        },
+        "resetPassword": {
+            "heading": "Скидання пароля",
+            "backButtonLabel": "Вже маєте акаунт? Увійти",
+            "emailLabel": "Електронна пошта",
+            "emailDescription": "Електронна пошта, яку ви використовували під час реєстрації.",
+            "submitButton": "Скинути пароль",
+            "successAlertTitle": "Посилання надіслано",
+            "successAlertDescription": "Ми надіслали посилання для скидання пароля на вашу електронну пошту. Якщо у вас увімкнені сповіщення в Telegram, посилання також було надіслано туди.",
+            "errorMessage": "Помилка скидання пароля"
+        },
+        "newPassword": {
+            "heading": "Новий пароль",
+            "backButtonLabel": "Вже маєте акаунт? Увійти",
+            "passwordLabel": "Новий пароль",
+            "passwordDescription": "Введіть ваш новий пароль.",
+            "passwordRepeatLabel": "Повторіть пароль",
+            "passwordRepeatDescription": "Повторіть новий пароль для підтвердження.",
+            "submitButton": "Встановити новий пароль",
+            "successMessage": "Пароль успішно змінено",
+            "errorMessage": "Помилка під час встановлення нового пароля"
         }
     }
 }

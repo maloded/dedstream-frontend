@@ -24,9 +24,10 @@ import {
 
 import { useLoginUserMutation } from '@/graphql/generated/output';
 
-import { TypeLoginSchema, loginSchema } from '@/schemas/auth/login.schema';
+import { type TypeLoginSchema, loginSchema } from '@/schemas/auth/login.schema';
 
 import { AuthWrapper } from '../AuthWrapper';
+import Link from 'next/link';
 
 export function LoginForm() {
 	const t = useTranslations('auth.login');
@@ -139,9 +140,17 @@ export function LoginForm() {
 								control={form.control}
 								render={({ field, fieldState }) => (
 									<Field data-invalid={fieldState.invalid}>
-										<FieldLabel htmlFor='form-rhf-demo-title'>
-											{t('passwordLabel')}
-										</FieldLabel>
+										<div className='flex items-center justify-between'>
+											<FieldLabel htmlFor='form-rhf-demo-title'>
+												{t('passwordLabel')}
+											</FieldLabel>
+											<Link
+												href='/account/recovery'
+												className='ml-auto inline-block text-sm'
+											>
+												{t('forgotPassword')}
+											</Link>
+										</div>
 										<Input
 											{...field}
 											id='form-rhf-demo-title'
