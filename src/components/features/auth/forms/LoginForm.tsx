@@ -2,6 +2,7 @@
 
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useTranslations } from 'next-intl';
+import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import { Controller, useForm } from 'react-hook-form';
@@ -24,13 +25,16 @@ import {
 
 import { useLoginUserMutation } from '@/graphql/generated/output';
 
+import { useAuth } from '@/hooks/useAuth';
+
 import { type TypeLoginSchema, loginSchema } from '@/schemas/auth/login.schema';
 
 import { AuthWrapper } from '../AuthWrapper';
-import Link from 'next/link';
 
 export function LoginForm() {
 	const t = useTranslations('auth.login');
+
+	const { auth } = useAuth();
 
 	const router = useRouter();
 
@@ -49,6 +53,7 @@ export function LoginForm() {
 			if (data.loginUser.message) {
 				setIsShowTwoFactor(true);
 			} else {
+				auth();
 				toast.success(t('successMessage'));
 				router.push('/dashboard/settings');
 			}
