@@ -20,6 +20,20 @@
             "successMessage": "Обліковий запис підтверджено",
             "errorMessage": "Помилка при регістрації",
             "heading": "Веріфікація акаунта"
+        },
+        "login": {
+            "heading": "Вхід до DedStream",
+            "backButtonLabel": "Немає акаунта? Зареєструватися!",
+            "loginLabel": "Логін",
+            "loginDescription": "Ваше ім’я користувача або електронна пошта, які ви використовували під час реєстрації.",
+            "passwordLabel": "Пароль",
+            "passwordDescription": "Пароль, який ви використовували під час реєстрації.",
+            "pinLabel": "6-значний код",
+            "pinDescription": "Введіть код із вашого застосунку автентифікації.",
+            "forgotPassword": "Забули пароль?",
+            "submitButton": "Увійти",
+            "successMessage": "Ви успішно увійшли",
+            "errorMessage": "Помилка під час входу"
         }
     }
 }
