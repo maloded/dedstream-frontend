@@ -1,4 +1,53 @@
 {
+    "layout": {
+        "logo": {
+            "platform": "Платформа для онлайн-трансляцій"
+        },
+        "headerMenu": {
+            "login": "Увійти",
+            "register": "Створити акаунт",
+            "profileMenu": {
+                "notifications": {
+                    "heading": "Повідомлення",
+                    "loading": "Загрузка...",
+                    "empty": "Ви не маєте повідомлень"
+                },
+                "successMessage": "Ви вийшли з акаунту",
+                "errorMessage": "Помилка при виході",
+                "channel": "Канал",
+                "dashboard": "Панель стрімера",
+                "logout": "Вийти"
+            }
+        },
+        "search": {
+            "placeholder": "Пошук трансляцій..."
+        },
+        "dashboardNav": {
+            "settings": "Налаштування акаунту",
+            "streamSettings": "Налаштування трансляції",
+            "keys": "Ключі доступу",
+            "chatSettings": "Чат і модерація",
+            "followers": "Аудиторія",
+            "sponsors": "Партнери",
+            "premium": "Оновити тариф",
+            "transactions": "Історія оплат"
+        },
+        "sidebarHeader": {
+            "expand": "Розгорнути",
+            "collapse": "Згорнути",
+            "navigation": "Навігація",
+            "forYou": "Для вас"
+        },
+        "userNav": {
+            "home": "Головна",
+            "categories": "Категорії",
+            "streams": "Трансляції",
+            "recommended": "Рекомендовані"
+        },
+        "recommended": {
+            "heading": "Рекомендації"
+        }
+    },
     "auth": {
         "register": {
             "heading": "Реєстрація в DedStream",

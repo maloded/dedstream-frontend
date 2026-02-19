@@ -1,8 +1,10 @@
 import { InMemoryCache } from '@apollo/client';
 import { ApolloClient, HttpLink } from '@apollo/client';
 
+import { SERVER_URL } from './constants/url.constants';
+
 const httpLink = new HttpLink({
-	uri: process.env.NEXT_PUBLIC_SERVER_URL,
+	uri: SERVER_URL,
 	credentials: 'include',
 });
 
