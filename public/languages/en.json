@@ -1,51 +1,54 @@
 {
     "layout": {
-        "logo": {
-            "platform": "Streaming Platform"
-        },
-        "headerMenu": {
-            "login": "Sign In",
-            "register": "Sign Up",
-            "profileMenu": {
-                "notifications": {
-                    "heading": "Notifications",
-                    "loading": "Loading...",
-                    "empty": "You have no notifications"
-                },
-                "successMessage": "Successfully logged out",
-                "errorMessage": "Logout error",
-                "channel": "My Channel",
-                "dashboard": "Dashboard",
-                "logout": "Sign Out"
+        "header": {
+            "logo": {
+                "platform": "Streaming Platform"
+            },
+            "headerMenu": {
+                "login": "Sign In",
+                "register": "Sign Up",
+                "profileMenu": {
+                    "notifications": {
+                        "heading": "Notifications",
+                        "loading": "Loading...",
+                        "empty": "You have no notifications"
+                    },
+                    "successMessage": "Successfully logged out",
+                    "errorMessage": "Logout error",
+                    "channel": "My Channel",
+                    "dashboard": "Dashboard",
+                    "logout": "Sign Out"
+                }
+            },
+            "search": {
+                "placeholder": "Search"
             }
         },
-        "search": {
-            "placeholder": "Search"
-        },
-        "dashboardNav": {
-            "settings": "Settings",
-            "streamSettings": "Stream Settings",
-            "keys": "Stream Keys",
-            "chatSettings": "Chat Settings",
-            "followers": "Followers",
-            "sponsors": "Sponsors",
-            "premium": "Premium Plans",
-            "transactions": "Transactions"
-        },
-        "sidebarHeader": {
-            "expand": "Expand",
-            "collapse": "Collapse",
-            "navigation": "Navigation",
-            "forYou": "For You"
-        },
-        "userNav": {
-            "home": "Home",
-            "categories": "Categories",
-            "streams": "Streams",
-            "recommended": "Recommended"
-        },
-        "recommended": {
-            "heading": "Recommendations"
+        "sidebar": {
+            "header": {
+                "expand": "Expand",
+                "collapse": "Collapse",
+                "navigation": "Navigation"
+            },
+            "dashboardNav": {
+                "settings": "Settings",
+                "streamSettings": "Stream Settings",
+                "keys": "Stream Keys",
+                "chatSettings": "Chat Settings",
+                "followers": "Followers",
+                "sponsors": "Sponsors",
+                "premium": "Premium Plans",
+                "transactions": "Transactions"
+            },
+            "userNav": {
+                "home": "Home",
+                "categories": "Categories",
+                "streams": "Streams",
+                "recommended": "Recommended"
+            },
+            "recommended": {
+                "heading": "Recommendations"
+            }
         }
     },
     "auth": {
@@ -104,6 +107,11 @@
             "submitButton": "Set new password",
             "successMessage": "Password successfully changed",
             "errorMessage": "Error when setting a new password"
+        }
+    },
+    "components": {
+        "liveBadge": {
+            "text": "LIVE"
         }
     }
 }

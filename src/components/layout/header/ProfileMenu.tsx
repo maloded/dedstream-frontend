@@ -22,7 +22,7 @@ import { useCurrent } from '@/hooks/useCurrent';
 import { Notifications } from './notifications/Notifications';
 
 export function ProfileMenu() {
-	const t = useTranslations('layout.headerMenu.profileMenu');
+	const t = useTranslations('layout.header.headerMenu.profileMenu');
 
 	const router = useRouter();
 
@@ -63,7 +63,7 @@ export function ProfileMenu() {
 							{t('channel')}
 						</DropdownMenuItem>
 					</Link>
-					<Link href={'/dashboard/setting'}>
+					<Link href={'/dashboard/settings'}>
 						<DropdownMenuItem>
 							<LayoutDashboard className='mr-2 size-4' />
 							{t('dashboard')}
