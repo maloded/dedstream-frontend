@@ -3,6 +3,7 @@ query FindRecommendedChannels {
 		username
         avatar
         isVerified
+		updatedAt
 		stream {
 			isLive
 		}

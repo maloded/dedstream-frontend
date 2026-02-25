@@ -1,5 +1,6 @@
 'use client';
 
+import { Slot } from '@radix-ui/react-slot';
 import { type VariantProps, cva } from 'class-variance-authority';
 import { type ButtonHTMLAttributes, forwardRef } from 'react';
 
@@ -18,6 +19,7 @@ const buttonVariants = cva(
 			size: {
 				default: 'h-10 px-5 py-2 rounded-full',
 				icon: 'size-8 rounded-full',
+				lgIcon: 'size-10 rounded-full',
 			},
 		},
 
@@ -31,12 +33,15 @@ const buttonVariants = cva(
 export interface ButtonProps
 	extends
 		ButtonHTMLAttributes<HTMLButtonElement>,
-		VariantProps<typeof buttonVariants> {}
+		VariantProps<typeof buttonVariants> {
+	asChild?: boolean;
+}
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(
-	({ className, variant, size, ...props }, ref) => {
+	({ className, variant, asChild, size, ...props }, ref) => {
+		const Comp = asChild ? Slot : 'button';
 		return (
-			<button
+			<Comp
 				ref={ref}
 				className={cn(buttonVariants({ variant, size }), className)}
 				{...props}

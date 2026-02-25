@@ -108,10 +108,61 @@
             "successMessage": "Пароль успішно змінено",
             "errorMessage": "Помилка під час встановлення нового пароля"
         },
-    "components": {
-        "liveBadge": {
-            "text": "В ефірі"
+        "dashboard": {
+            "settings": {
+                "header": {
+                    "heading": "Налаштування",
+                    "description": "Тут ви можете керувати своїми налаштуваннями",
+                    "profile": "Профіль",
+                    "account": "Акаунт",
+                    "appearance": "Зовнішній вигляд",
+                    "notifications": "Сповіщення",
+                    "sessions": "Сесії"
+                },
+                "profile": {
+                    "header": {
+                        "heading": "Профіль",
+                        "description": "Налаштуйте свій профіль, змінивши аватар, особисту інформацію та посилання на соціальні мережі. Оновіть дані, щоб інші користувачі могли дізнатися про вас більше."
+                    },
+                    "avatar": {
+                        "heading": "Зображення профілю",
+                        "updateButton": "Оновити зображення профілю",
+                        "confirmModal": {
+                            "heading": "Видалити аватар",
+                            "message": "Ви впевнені, що хочете видалити зображення профілю? Цю дію неможливо скасувати."
+                        },
+                        "info": "Підтримувані формати: JPG, JPEG, PNG, WEBP або GIF. Максимальний розмір: 10 МБ.",
+                        "successUpdateMessage": "Зображення профілю успішно оновлено.",
+                        "errorUpdateMessage": "Помилка під час оновлення зображення профілю.",
+                        "successRemoveMessage": "Зображення профілю успішно видалено.",
+                        "errorRemoveMessage": "Помилка під час видалення зображення профілю."
+                    },
+                    "info": {
+                        "heading": "Налаштування профілю",
+                        "usernameLabel": "Імʼя користувача",
+                        "usernamePlaceholder": "ded",
+                        "usernameDescription": "Так вас бачитимуть інші користувачі.",
+                        "displayNameLabel": "Відображуване імʼя",
+                        "displayNamePlaceholder": "dedushka",
+                        "displayNameDescription": "Ви можете використовувати великі літери у відображуваному імені за бажанням.",
+                        "bioLabel": "Про мене",
+                        "bioPlaceholder": "Я люблю програмування",
+                        "bioDescription": "Інформація про вас не повинна перевищувати 300 символів.",
+                        "successMessage": "Профіль успішно оновлено",
+                        "errorMessage": "Помилка під час оновлення профілю",
+                        "submitButton": "Зберегти зміни"
+                    }
+                }
+            }
+        },
+        "components": {
+            "liveBadge": {
+                "text": "В ефірі"
+            },
+            "confirmModal": {
+                "cancel": "Відмінити",
+                "continue": "Продовжити"
+            }
         }
-    }
     }
 }

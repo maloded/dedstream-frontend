@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 import { Button } from '@/components/ui/common/Button';
+import { Skeleton } from '@/components/ui/common/Skeleton';
 import { ChannelAvatar } from '@/components/ui/elements/ChannelAvatar';
 import { ChannelVerified } from '@/components/ui/elements/ChannelVerified';
 import { Hint } from '@/components/ui/elements/Hint';
@@ -64,4 +65,8 @@ export function ChannelItem({ channel }: ChannelItemProps) {
 			</Link>
 		</Button>
 	);
+}
+
+export function ChannelItemSkeleton() {
+	return <Skeleton className='mt-3 h-11 w-full rounded-full' />;
 }

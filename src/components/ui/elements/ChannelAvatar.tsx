@@ -13,6 +13,7 @@ const avatarSizes = cva('', {
 			sm: 'size-7',
 			default: 'size-9',
 			lg: 'size-14',
+			xl: 'size-32',
 		},
 	},
 	defaultVariants: {
@@ -21,7 +22,10 @@ const avatarSizes = cva('', {
 });
 
 interface ChannelAvatarProps extends VariantProps<typeof avatarSizes> {
-	channel: Pick<FindProfileQuery['findProfile'], 'username' | 'avatar'>;
+	channel: Pick<
+		FindProfileQuery['findProfile'],
+		'username' | 'avatar' | 'updatedAt'
+	>;
 	isLive?: boolean;
 }
 
@@ -29,6 +33,7 @@ export function ChannelAvatar({ size, channel, isLive }: ChannelAvatarProps) {
 	return (
 		<div className='relative'>
 			<Avatar
+				key={`${channel.avatar}-${channel.updatedAt}`}
 				className={cn(
 					avatarSizes({ size }),
 					isLive
@@ -37,10 +42,16 @@ export function ChannelAvatar({ size, channel, isLive }: ChannelAvatarProps) {
 				)}
 			>
 				<AvatarImage
-					src={getMediaSource(channel.avatar!)}
+					src={
+						channel.avatar
+							? getMediaSource(channel.avatar, channel.updatedAt)
+							: undefined
+					}
 					className='object-cover'
 				/>
-				<AvatarFallback>{channel.username[0]}</AvatarFallback>
+				<AvatarFallback className={cn(size === 'xl' && 'text-4xl')}>
+					{channel.username[0]}
+				</AvatarFallback>
 			</Avatar>
 		</div>
 	);
