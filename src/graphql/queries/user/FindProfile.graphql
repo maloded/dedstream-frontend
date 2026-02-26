@@ -5,6 +5,7 @@ query FindProfile {
         email
 		avatar
 		bio
+		isTotpEnabled
 		updatedAt
 	}
 }
