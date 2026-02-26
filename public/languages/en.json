@@ -152,6 +152,30 @@
                     "successMessage": "Profile successfully updated",
                     "errorMessage": "Error updating profile",
                     "submitButton": "Save Changes"
+                },
+                "socialLinks": {
+                    "createForm": {
+                        "heading": "Social Media Links",
+                        "titleLabel": "Link Title",
+                        "titlePlaceholder": "YouTube",
+                        "titleDescription": "This text will be displayed for the link.",
+                        "urlLabel": "Link URL",
+                        "urlPlaceholder": "https://github.com/ded7",
+                        "urlDescription": "Where does this link lead? Please enter the full URL, e.g., https://github.com/ded7",
+                        "submitButton": "Add",
+                        "successMessage": "Social media link successfully added",
+                        "errorMessage": "Error adding social media link"
+                    },
+                    "editForm": {
+                        "cancelButton": "Cancel",
+                        "submitButton": "Save",
+                        "successUpdateMessage": "Social media link successfully updated",
+                        "errorUpdateMessage": "Error updating social media link",
+                        "successRemoveMessage": "Social media link successfully removed",
+                        "errorRemoveMessage": "Error removing social media link"
+                    },
+                    "successReorderMessage": "Order of social media links successfully updated",
+                    "errorReorderMessage": "Error changing order of social media links"
                 }
             }
         }

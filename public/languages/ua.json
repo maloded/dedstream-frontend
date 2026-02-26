@@ -151,6 +151,30 @@
                         "successMessage": "Профіль успішно оновлено",
                         "errorMessage": "Помилка під час оновлення профілю",
                         "submitButton": "Зберегти зміни"
+                    },
+                    "socialLinks": {
+                        "createForm": {
+                            "heading": "Посилання на соціальні мережі",
+                            "titleLabel": "Назва посилання",
+                            "titlePlaceholder": "YouTube",
+                            "titleDescription": "Текст, який відображатиметься для посилання.",
+                            "urlLabel": "URL посилання",
+                            "urlPlaceholder": "https://github.com/ded7",
+                            "urlDescription": "Куди веде це посилання? Введіть повну адресу, наприклад: https://github.com/ded7",
+                            "submitButton": "Додати",
+                            "successMessage": "Посилання на соціальну мережу успішно додано",
+                            "errorMessage": "Помилка під час додавання посилання"
+                        },
+                        "editForm": {
+                            "cancelButton": "Скасувати",
+                            "submitButton": "Зберегти",
+                            "successUpdateMessage": "Посилання на соціальну мережу успішно оновлено",
+                            "errorUpdateMessage": "Помилка під час оновлення посилання",
+                            "successRemoveMessage": "Посилання на соціальну мережу успішно видалено",
+                            "errorRemoveMessage": "Помилка під час видалення посилання"
+                        },
+                        "successReorderMessage": "Порядок посилань успішно змінено",
+                        "errorReorderMessage": "Помилка під час зміни порядку посилань"
                     }
                 }
             }
