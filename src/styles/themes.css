@@ -1,0 +1,179 @@
+/* VIOLET */
+.theme-violet {
+	--primary: 262 83% 58%;
+	--primary-foreground: 210 20% 98%;
+}
+.dark .theme-violet {
+	--primary: 263 70% 50%;
+	--primary-foreground: 210 20% 98%;
+}
+
+/* BLUE */
+.theme-blue {
+	--primary: 204 70% 53%;
+	--primary-foreground: 210 20% 98%;
+}
+.dark .theme-blue {
+	--primary: 204 70% 45%;
+	--primary-foreground: 210 20% 98%;
+}
+
+/* TURQUOISE */
+.theme-turquoise {
+	--primary: 176 77% 41%;
+	--primary-foreground: 210 20% 98%;
+}
+.dark .theme-turquoise {
+	--primary: 176 77% 35%;
+	--primary-foreground: 210 20% 98%;
+}
+
+/* GREEN */
+.theme-green {
+	--primary: 142 71% 45%;
+	--primary-foreground: 210 20% 98%;
+}
+.dark .theme-green {
+	--primary: 142 71% 38%;
+	--primary-foreground: 210 20% 98%;
+}
+
+/* LIME */
+.theme-lime {
+	--primary: 95 75% 50%;
+	--primary-foreground: 0 0% 10%;
+}
+.dark .theme-lime {
+	--primary: 95 75% 42%;
+	--primary-foreground: 0 0% 10%;
+}
+
+/* YELLOW */
+.theme-yellow {
+	--primary: 48 89% 50%;
+	--primary-foreground: 0 0% 10%;
+}
+.dark .theme-yellow {
+	--primary: 48 89% 42%;
+	--primary-foreground: 0 0% 10%;
+}
+
+/* ORANGE */
+.theme-orange {
+	--primary: 28 90% 54%;
+	--primary-foreground: 210 20% 98%;
+}
+.dark .theme-orange {
+	--primary: 28 90% 45%;
+	--primary-foreground: 210 20% 98%;
+}
+
+/* PEACH */
+.theme-peach {
+	--primary: 17 94% 67%;
+	--primary-foreground: 0 0% 10%;
+}
+.dark .theme-peach {
+	--primary: 17 94% 58%;
+	--primary-foreground: 0 0% 10%;
+}
+
+/* PINK */
+.theme-pink {
+	--primary: 330 81% 60%;
+	--primary-foreground: 210 20% 98%;
+}
+.dark .theme-pink {
+	--primary: 330 81% 52%;
+	--primary-foreground: 210 20% 98%;
+}
+
+/* ROSE */
+.theme-rose {
+	--primary: 340 82% 52%;
+	--primary-foreground: 210 20% 98%;
+}
+.dark .theme-rose {
+	--primary: 340 82% 45%;
+	--primary-foreground: 210 20% 98%;
+}
+
+/* RED */
+.theme-red {
+	--primary: 0 72% 51%;
+	--primary-foreground: 210 20% 98%;
+}
+.dark .theme-red {
+	--primary: 0 72% 45%;
+	--primary-foreground: 210 20% 98%;
+}
+
+/* INDIGO */
+.theme-indigo {
+	--primary: 231 60% 50%;
+	--primary-foreground: 210 20% 98%;
+}
+.dark .theme-indigo {
+	--primary: 231 60% 42%;
+	--primary-foreground: 210 20% 98%;
+}
+
+/* CYAN */
+.theme-cyan {
+	--primary: 190 85% 48%;
+	--primary-foreground: 210 20% 98%;
+}
+.dark .theme-cyan {
+	--primary: 190 85% 40%;
+	--primary-foreground: 210 20% 98%;
+}
+
+/* BROWN */
+.theme-brown {
+	--primary: 25 45% 35%;
+	--primary-foreground: 210 20% 98%;
+}
+.dark .theme-brown {
+	--primary: 25 45% 28%;
+	--primary-foreground: 210 20% 98%;
+}
+
+/* GRAY */
+.theme-gray {
+	--primary: 220 10% 50%;
+	--primary-foreground: 210 20% 98%;
+}
+.dark .theme-gray {
+	--primary: 220 10% 42%;
+	--primary-foreground: 210 20% 98%;
+}
+
+/* SLATE */
+.theme-slate {
+	--primary: 215 20% 35%;
+	--primary-foreground: 210 20% 98%;
+}
+.dark .theme-slate {
+	--primary: 215 20% 28%;
+	--primary-foreground: 210 20% 98%;
+}
+
+/* BLACK */
+.theme-black {
+	--primary: 0 0% 10%;
+	--primary-foreground: 210 20% 98%;
+}
+.dark .theme-black {
+	--primary: 0 0% 20%;
+	--primary-foreground: 210 20% 98%;
+}
+
+/* WHITE */
+.theme-white {
+	--primary: 0 0% 98%;
+	--primary-foreground: 0 0% 10%;
+}
+.dark .theme-white {
+	--primary: 0 0% 85%;
+	--primary-foreground: 0 0% 10%;
+}

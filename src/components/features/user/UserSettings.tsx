@@ -10,11 +10,15 @@ import { Heading } from '@/components/ui/elements/Heading';
 
 import { ChangeEmailForm } from './account/ChangeEmailForm';
 import { ChangePasswordForm } from './account/ChangePasswordForm';
+import { DeactivateCard } from './account/totp/DiactivateCard';
 import { WrapperTotp } from './account/totp/WrapperTotp';
+import { ChangeLanguageForm } from './appearance/ChangeLanguageForm';
+import { ChangeThemeForm } from './appearance/ChangeThemeForm';
+import { ChangeNotificationsSettingsForm } from './notifications/ChangeNotificationsSettingsForm';
 import { ChangeAvatarForm } from './profile/ChangeAvatarForm';
 import { ChangeInfoForm } from './profile/ChangeInfoForm';
 import { SocialLinksForm } from './profile/social-links-form/SocialLinksForm';
-import { DeactivateCard } from './account/totp/DiactivateCard';
+import { SessionsList } from './sessions/SessionsList';
 
 export function UserSettings() {
 	const t = useTranslations('dashboard.settings');
@@ -79,9 +83,34 @@ export function UserSettings() {
 						<DeactivateCard />
 					</div>
 				</TabsContent>
-				<TabsContent value='appearance'>appearance</TabsContent>
-				<TabsContent value='notifications'>notifications</TabsContent>
-				<TabsContent value='sessions'>sessions</TabsContent>
+				<TabsContent value='appearance'>
+					<div className='mt-5 space-y-6'>
+						<Heading
+							title={t('appearance.header.heading')}
+							description={t('appearance.header.description')}
+						/>
+						<ChangeThemeForm />
+						<ChangeLanguageForm />
+					</div>
+				</TabsContent>
+				<TabsContent value='notifications'>
+					<div className='mt-5 space-y-6'>
+						<Heading
+							title={t('notifications.header.heading')}
+							description={t('notifications.header.description')}
+						/>
+						<ChangeNotificationsSettingsForm />
+					</div>
+				</TabsContent>
+				<TabsContent value='sessions'>
+					<div className='mt-5 space-y-6'>
+						<Heading
+							title={t('sessions.header.heading')}
+							description={t('sessions.header.description')}
+						/>
+						<SessionsList />
+					</div>
+				</TabsContent>
 			</Tabs>
 		</div>
 	);

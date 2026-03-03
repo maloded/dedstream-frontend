@@ -1,0 +1,84 @@
+export function LogoImage() {
+	return (
+		<svg
+			width={72}
+			height={72}
+			viewBox='0 0 800 600'
+			xmlns='http://www.w3.org/2000/svg'
+		>
+			<defs>
+				<linearGradient id='bubbleGradient' x1='0' y1='0' x2='1' y2='1'>
+					<stop offset='0%' stopColor='#16a34a' />
+					<stop offset='100%' stopColor='#065f46' />
+				</linearGradient>
+
+				<filter
+					id='softShadow'
+					x='-20%'
+					y='-20%'
+					width='140%'
+					height='140%'
+				>
+					<feDropShadow
+						dx='0'
+						dy='10'
+						stdDeviation='20'
+						floodColor='#000'
+						floodOpacity='0.25'
+					/>
+				</filter>
+			</defs>
+
+			<path
+				d={`M150 140 
+                    Q150 90 200 90 
+                    H620 
+                    Q670 90 670 140 
+                    V320 
+                    Q670 370 620 370 
+                    H350 
+                    L250 460 
+                    Q235 475 235 445 
+                    V370 
+                    H200 
+                    Q150 370 150 320 
+                    Z`}
+				fill='url(#bubbleGradient)'
+				filter='url(#softShadow)'
+			/>
+
+			<path
+				d={`M175 145 
+                    Q175 115 205 115 
+                    H610 
+                    Q640 115 640 145 
+                    V305 
+                    Q640 335 610 335 
+                    H360 
+                    L265 410 
+                    V335 
+                    H205 
+                    Q175 335 175 305 
+                    Z`}
+				fill='none'
+				stroke='#064e3b'
+				strokeWidth={20}
+				opacity={0.6}
+			/>
+
+			<text
+				x='410'
+				y='235'
+				textAnchor='middle'
+				dominantBaseline='middle'
+				fontFamily='Anton, Oswald, Impact, sans-serif'
+				fontSize={150}
+				fontWeight={700}
+				fill='#ffffff'
+				letterSpacing={8}
+			>
+				DED
+			</text>
+		</svg>
+	);
+}

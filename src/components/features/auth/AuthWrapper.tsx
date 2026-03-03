@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import { PropsWithChildren, ReactNode } from 'react';
 
@@ -10,6 +9,7 @@ import {
 	CardHeader,
 	CardTitle,
 } from '@/components/ui/common/Card';
+import { LogoImage } from '@/components/images/LogoImage';
 
 interface AuthWrapperProps {
 	heading: string;
@@ -28,12 +28,7 @@ export function AuthWrapper({
 		<div className='items-center flex h-full justify-center'>
 			<Card className='w-[450px]'>
 				<CardHeader className='flex items-center justify-center gap-4'>
-					<Image
-						src='/images/logo.svg'
-						alt='TeaStream'
-						width={40}
-						height={40}
-					/>
+					<LogoImage />
 					<CardTitle>{heading}</CardTitle>
 				</CardHeader>
 				<CardContent>{children}</CardContent>
