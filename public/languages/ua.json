@@ -315,6 +315,90 @@
                     "createdAt": "Створено:"
                 }
             }
+        },
+        "keys": {
+            "header": {
+                "heading": "Ключі трансляції",
+                "description": "Згенеруйте URL та ключ для стрімінгу."
+            },
+            "url": {
+                "heading": "URL"
+            },
+            "key": {
+                "heading": "Ключ"
+            },
+            "instructionModal": {
+                "trigger": "Інструкція",
+                "heading": "🛠 Гайд з налаштування OBS для прямої трансляції 🛠",
+                "description": "Щоб почати ділитися контентом зі своєю аудиторією, дотримуйтесь цієї покрокової інструкції з підключення OBS Studio. Усього кілька кроків — і ви готові виходити в ефір!",
+                "step1Title": "🔑 Крок 1: Завантажте OBS Studio та згенеруйте Server URL і Stream Key",
+                "step1Description": "Щоб розпочати трансляцію, вам потрібні два ключові елементи: Server URL і Stream Key. Виконайте наступні кроки:",
+                "downloadObs": "Завантажити OBS Studio",
+                "downloadObsDescription": "Перед налаштуванням стріму завантажте та встановіть програму.",
+                "obsLinkText": "OBS Studio",
+                "copyKeys": "Скопіюйте Server URL та Stream Key",
+                "copyKeysDescription": "Після генерації ви побачите два поля: Server URL та Stream Key. Натисніть на іконки копіювання біля кожного поля, щоб зберегти їх у буфер обміну.",
+                "step2Title": "⚙ Крок 2: Налаштуйте OBS Studio",
+                "step2Description": "Тепер, коли у вас є необхідні дані, налаштуємо OBS для роботи з вашою трансляцією:",
+                "openObs": "Відкрити OBS Studio",
+                "openObsDescription": "Якщо OBS ще не встановлено, завантажте його з офіційного сайту та встановіть. Після запуску відкриється головна сторінка OBS.",
+                "openStreamSettings": "Відкрити налаштування стріму",
+                "openStreamSettingsDescription": "У верхньому меню натисніть \"Файл\" → \"Налаштування\". Перейдіть на вкладку \"Трансляція\".",
+                "enterDetails": "Введіть свої дані",
+                "enterDetailsDescription": "У полі 'Service' оберіть 'Custom...'. Вставте раніше скопійований Server URL у поле 'URL'. У полі 'Stream Key' введіть свій ключ трансляції.",
+                "saveSettings": "Зберегти налаштування",
+                "saveSettingsDescription": "Натисніть 'Apply', а потім 'OK', щоб зберегти зміни.",
+                "step3Title": "🚀 Крок 3: Почніть трансляцію",
+                "step3Description": "Після успішного налаштування OBS ви готові розпочати пряму трансляцію:",
+                "startStream": "Почати трансляцію",
+                "startStreamDescription": "Поверніться на головний екран OBS і натисніть кнопку 'Start Streaming'.",
+                "monitorStream": "Моніторинг трансляції",
+                "monitorStreamDescription": "Ваша трансляція розпочнеться в реальному часі, і ви зможете відстежувати її як на платформі, так і в OBS.",
+                "congrats": "✨ Вітаємо! Ви успішно налаштували OBS для трансляції на нашій платформі. Ваша аудиторія чекає на нові захопливі моменти та контент! 🎉",
+                "close": "Закрити"
+            },
+            "createModal": {
+                "trigger": "Згенерувати ключі",
+                "heading": "Генерація ключів",
+                "ingressTypeLabel": "Тип підключення",
+                "ingressTypePlaceholder": "Оберіть тип підключення",
+                "ingressTypeDescription": "Оберіть RTMP для класичного мовлення або WHIP для WebRTC-підключень.",
+                "submitButton": "Згенерувати",
+                "successMessage": "Ingress створено",
+                "errorMessage": "Не вдалося створить ingress"
+            }
+        },
+        "chat": {
+            "header": {
+                "heading": "Налаштування чату",
+                "description": "Тут ви можете керувати налаштуваннями чату."
+            },
+            "isChatEnabled": {
+                "heading": "Увімкнути чат",
+                "description": "Якщо ви увімкнете чат, глядачі зможуть надсилати повідомлення під час вашої трансляції."
+            },
+            "isChatFollowersOnly": {
+                "heading": "Чат лише для підписників",
+                "description": "Якщо ви увімкнете цей параметр, лише ваші підписники зможуть надсилати повідомлення в чат."
+            },
+            "isChatPremiumFollowersOnly": {
+                "heading": "Чат лише для преміум-підписників",
+                "description": "Якщо ви увімкнете цей параметр, лише преміум-підписники зможуть надсилати повідомлення в чат."
+            },
+            "successMessage": "Налаштування чату успішно оновлено",
+            "errorMessage": "Помилка під час оновлення налаштувань чату"
+        },
+        "followers": {
+            "header": {
+                "heading": "Підписники",
+                "description": "Ось список усіх ваших підписників."
+            },
+            "columns": {
+                "date": "Дата",
+                "user": "Користувач",
+                "actions": "Дії",
+                "viewChannel": "Переглянути канал"
+            }
         }
     },
     "components": {
@@ -324,6 +408,12 @@
         "confirmModal": {
             "cancel": "Відмінити",
             "continue": "Продовжити"
+        },
+        "copyButton": {
+            "successMessage": "Скопійовано"
+        },
+        "dataTable": {
+            "notFound": "Немає результатів."
         }
     },
     "utils": {

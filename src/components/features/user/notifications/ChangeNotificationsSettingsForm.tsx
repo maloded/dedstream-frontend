@@ -23,7 +23,7 @@ import {
 export function ChangeNotificationsSettingsForm() {
 	const t = useTranslations('dashboard.settings.notifications');
 
-	const { user, isLoadingProfile } = useCurrent();
+	const { user, isLoadingProfile, refetch} = useCurrent();
 
 	const form = useForm<TypeChangeNotificationsSettingsSchema>({
 		resolver: zodResolver(changeNotificationsSettingsSchema),
@@ -38,6 +38,7 @@ export function ChangeNotificationsSettingsForm() {
 	const [update, { loading: isLoadingUpdate }] =
 		useChangeNotificationSettingsMutation({
 			onCompleted(data) {
+				refetch()
 				toast.success(t('successMessage'));
 				if (data.changeNotificationSettings.telegramAuthToken) {
 					window.open(
@@ -46,6 +47,9 @@ export function ChangeNotificationsSettingsForm() {
 					);
 				}
 			},
+            onError() {
+                toast.error(t('errorMessage'));
+            }
 		});
 
 	function onChange(

@@ -1,8 +1,8 @@
 query FindProfile {
 	findProfile {
 		username
-        displayName
-        email
+		displayName
+		email
 		avatar
 		bio
 		isTotpEnabled
@@ -10,6 +10,13 @@ query FindProfile {
 		notificationSettings {
 			siteNotifications
 			telegramNotifications
+		}
+		stream {
+			serverUrl
+			streamKey
+			isChatEnabled
+			isChatFollowersOnly
+			isChatPremiumFollowersOnly
 		}
 	}
 }
