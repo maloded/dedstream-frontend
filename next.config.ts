@@ -4,7 +4,10 @@ import createNextIntlPlugin from 'next-intl/plugin';
 const withNextIntl = createNextIntlPlugin('./src/libs/i18n/request.ts');
 
 const nextConfig: NextConfig = {
-	/* config options here */
+	reactStrictMode: true,
+	images: {
+		domains: ['dedstream.gmhost.space'], 
+	},
 };
 
 export default withNextIntl(nextConfig);

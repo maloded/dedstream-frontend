@@ -1,6 +1,8 @@
 import { Heading } from '@/components/ui/elements/Heading';
 
-import { FindRandomStreamsQuery } from '@/graphql/generated/output';
+import { type FindRandomStreamsQuery } from '@/graphql/generated/output';
+
+import { StreamCard } from './StreamCard';
 
 interface StreamsListProps {
 	heading?: string;
@@ -12,10 +14,10 @@ export function StreamsList({ heading, streams }: StreamsListProps) {
 		<>
 			{heading && <Heading title={heading} />}
 			<div className='mt-6 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
-                {streams.map((stream, index) => (
-                    <div key={index}>{stream.title}</div>
-                ))}
-            </div>
+				{streams.map((stream, index) => (
+					<StreamCard key={index} stream={stream} />
+				))}
+			</div>
 		</>
 	) : (
 		<div>Not found</div>

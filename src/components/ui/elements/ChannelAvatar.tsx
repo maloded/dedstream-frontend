@@ -36,9 +36,9 @@ export function ChannelAvatar({ size, channel, isLive }: ChannelAvatarProps) {
 				key={`${channel.avatar}-${channel.updatedAt}`}
 				className={cn(
 					avatarSizes({ size }),
-					isLive
-						? 'shadow-[0_0_10px_rgba(34,197,94,0.6)] ring-green-500'
-						: 'shadow-[0_0_10px_rgba(156,163,175,0.6)] ring-gray-400',
+					isLive &&
+						'shadow-[0_0_15px_rgba(239,68,68,0.7)] ring-red-500',
+					// : 'shadow-[0_0_10px_rgba(156,163,175,0.5)] ring-gray-400',
 				)}
 			>
 				<AvatarImage
