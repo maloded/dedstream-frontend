@@ -3,6 +3,8 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getLocale, getMessages } from 'next-intl/server';
 import { Geist, Geist_Mono } from 'next/font/google';
 
+import { ColorSwitcher } from '@/components/ui/elements/ColorSwitcher';
+
 import { ApolloClientProvider } from '@/providers/ApolloClientProvider';
 import { ThemeProvider } from '@/providers/ThemeProvider';
 import { ToastProvider } from '@/providers/ToastProvider';
@@ -37,6 +39,7 @@ export default async function RootLayout({
 			<body
 				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
 			>
+				<ColorSwitcher />
 				<ApolloClientProvider>
 					<NextIntlClientProvider messages={messages}>
 						<ThemeProvider

@@ -3,28 +3,28 @@ export function LogoImage() {
 		<svg
 			width={72}
 			height={72}
-			viewBox='0 0 800 600'
-			xmlns='http://www.w3.org/2000/svg'
+			viewBox="0 0 800 600"
+			xmlns="http://www.w3.org/2000/svg"
 		>
 			<defs>
-				<linearGradient id='bubbleGradient' x1='0' y1='0' x2='1' y2='1'>
-					<stop offset='0%' stopColor='#16a34a' />
-					<stop offset='100%' stopColor='#065f46' />
+				<linearGradient id="bubbleGradient" x1="0" y1="0" x2="1" y2="1">
+					<stop offset="0%" style={{ stopColor: "var(--color-primary)" }} />
+					<stop offset="100%" style={{ stopColor: "var(--color-accent)" }} />
 				</linearGradient>
 
 				<filter
-					id='softShadow'
-					x='-20%'
-					y='-20%'
-					width='140%'
-					height='140%'
+					id="softShadow"
+					x="-20%"
+					y="-20%"
+					width="140%"
+					height="140%"
 				>
 					<feDropShadow
-						dx='0'
-						dy='10'
-						stdDeviation='20'
-						floodColor='#000'
-						floodOpacity='0.25'
+						dx="0"
+						dy="10"
+						stdDeviation="20"
+						floodColor="currentColor"
+						floodOpacity="0.25"
 					/>
 				</filter>
 			</defs>
@@ -43,8 +43,8 @@ export function LogoImage() {
                     H200 
                     Q150 370 150 320 
                     Z`}
-				fill='url(#bubbleGradient)'
-				filter='url(#softShadow)'
+				fill="url(#bubbleGradient)"
+				filter="url(#softShadow)"
 			/>
 
 			<path
@@ -60,21 +60,20 @@ export function LogoImage() {
                     H205 
                     Q175 335 175 305 
                     Z`}
-				fill='none'
-				stroke='#064e3b'
+				stroke="var(--color-accent-foreground)"
 				strokeWidth={20}
 				opacity={0.6}
 			/>
 
 			<text
-				x='410'
-				y='235'
-				textAnchor='middle'
-				dominantBaseline='middle'
-				fontFamily='Anton, Oswald, Impact, sans-serif'
+				x="410"
+				y="235"
+				textAnchor="middle"
+				dominantBaseline="middle"
+				fontFamily="Anton, Oswald, Impact, sans-serif"
 				fontSize={150}
 				fontWeight={700}
-				fill='#ffffff'
+				fill="var(--color-primary-foreground)"
 				letterSpacing={8}
 			>
 				DED

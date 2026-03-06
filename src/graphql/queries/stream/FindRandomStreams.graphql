@@ -1,0 +1,17 @@
+query FindRandomStreams {
+	findRandomStreams {
+		title
+		thumbnailUrl
+		isLive
+		user {
+			username
+			avatar
+			isVerified
+			updatedAt
+		}
+		category {
+			title
+			slug
+		}
+	}
+}

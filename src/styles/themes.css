@@ -1,179 +1,223 @@
 /* VIOLET */
 .theme-violet {
-	--primary: 262 83% 58%;
-	--primary-foreground: 210 20% 98%;
+	--color-primary: hsl(262 83% 58%);
+	--color-primary-foreground: hsl(210 20% 98%);
+	--color-accent: hsl(262 83% 94%);
+	--color-accent-foreground: hsl(262 83% 25%);
 }
 .dark .theme-violet {
-	--primary: 263 70% 50%;
-	--primary-foreground: 210 20% 98%;
+	--color-primary: hsl(263 70% 50%);
+	--color-primary-foreground: hsl(210 20% 98%);
+	--color-accent: hsl(263 70% 22%);
+	--color-accent-foreground: hsl(210 20% 98%);
 }
 
 /* BLUE */
 .theme-blue {
-	--primary: 204 70% 53%;
-	--primary-foreground: 210 20% 98%;
+	--color-primary: hsl(204 70% 53%);
+	--color-primary-foreground: hsl(210 20% 98%);
+	--color-accent: hsl(204 70% 92%);
+	--color-accent-foreground: hsl(204 70% 25%);
 }
 .dark .theme-blue {
-	--primary: 204 70% 45%;
-	--primary-foreground: 210 20% 98%;
+	--color-primary: hsl(204 70% 45%);
+	--color-primary-foreground: hsl(210 20% 98%);
+	--color-accent: hsl(204 70% 22%);
+	--color-accent-foreground: hsl(210 20% 98%);
 }
 
 /* TURQUOISE */
 .theme-turquoise {
-	--primary: 176 77% 41%;
-	--primary-foreground: 210 20% 98%;
+	--color-primary: hsl(176 77% 41%);
+	--color-primary-foreground: hsl(210 20% 98%);
+	--color-accent: hsl(176 77% 90%);
+	--color-accent-foreground: hsl(176 77% 20%);
 }
 .dark .theme-turquoise {
-	--primary: 176 77% 35%;
-	--primary-foreground: 210 20% 98%;
+	--color-primary: hsl(176 77% 35%);
+	--color-primary-foreground: hsl(210 20% 98%);
+	--color-accent: hsl(176 77% 20%);
+	--color-accent-foreground: hsl(210 20% 98%);
 }
 
 /* GREEN */
 .theme-green {
-	--primary: 142 71% 45%;
-	--primary-foreground: 210 20% 98%;
+	--color-primary: hsl(142 71% 45%);
+	--color-primary-foreground: hsl(210 20% 98%);
+	--color-accent: hsl(142 71% 90%);
+	--color-accent-foreground: hsl(142 71% 20%);
 }
 .dark .theme-green {
-	--primary: 142 71% 38%;
-	--primary-foreground: 210 20% 98%;
+	--color-primary: hsl(142 71% 38%);
+	--color-primary-foreground: hsl(210 20% 98%);
+	--color-accent: hsl(142 71% 20%);
+	--color-accent-foreground: hsl(210 20% 98%);
 }
 
 /* LIME */
 .theme-lime {
-	--primary: 95 75% 50%;
-	--primary-foreground: 0 0% 10%;
+	--color-primary: hsl(95 75% 50%);
+	--color-primary-foreground: hsl(210 20% 98%);
+	--color-accent: hsl(95 75% 90%);
+	--color-accent-foreground: hsl(95 75% 20%);
 }
 .dark .theme-lime {
-	--primary: 95 75% 42%;
-	--primary-foreground: 0 0% 10%;
+	--color-primary: hsl(95 75% 42%);
+	--color-primary-foreground: hsl(210 20% 98%);
+	--color-accent: hsl(95 75% 20%);
+	--color-accent-foreground: hsl(210 20% 98%);
 }
 
 /* YELLOW */
 .theme-yellow {
-	--primary: 48 89% 50%;
-	--primary-foreground: 0 0% 10%;
+	--color-primary: hsl(48 89% 50%);
+	--color-primary-foreground: hsl(210 20% 98%);
+	--color-accent: hsl(48 89% 90%);
+	--color-accent-foreground: hsl(48 89% 20%);
 }
 .dark .theme-yellow {
-	--primary: 48 89% 42%;
-	--primary-foreground: 0 0% 10%;
+	--color-primary: hsl(48 89% 42%);
+	--color-primary-foreground: hsl(210 20% 98%);
+	--color-accent: hsl(48 89% 20%);
+	--color-accent-foreground: hsl(210 20% 98%);
 }
 
 /* ORANGE */
 .theme-orange {
-	--primary: 28 90% 54%;
-	--primary-foreground: 210 20% 98%;
+	--color-primary: hsl(28 90% 54%);
+	--color-primary-foreground: hsl(210 20% 98%);
+	--color-accent: hsl(28 90% 92%);
+	--color-accent-foreground: hsl(28 90% 25%);
 }
 .dark .theme-orange {
-	--primary: 28 90% 45%;
-	--primary-foreground: 210 20% 98%;
+	--color-primary: hsl(28 90% 45%);
+	--color-primary-foreground: hsl(210 20% 98%);
+	--color-accent: hsl(28 90% 22%);
+	--color-accent-foreground: hsl(210 20% 98%);
 }
 
 /* PEACH */
 .theme-peach {
-	--primary: 17 94% 67%;
-	--primary-foreground: 0 0% 10%;
+	--color-primary: hsl(17 94% 67%);
+	--color-primary-foreground: hsl(210 20% 98%);
+	--color-accent: hsl(17 94% 92%);
+	--color-accent-foreground: hsl(17 94% 25%);
 }
 .dark .theme-peach {
-	--primary: 17 94% 58%;
-	--primary-foreground: 0 0% 10%;
+	--color-primary: hsl(17 94% 58%);
+	--color-primary-foreground: hsl(210 20% 98%);
+	--color-accent: hsl(17 94% 22%);
+	--color-accent-foreground: hsl(210 20% 98%);
 }
 
 /* PINK */
 .theme-pink {
-	--primary: 330 81% 60%;
-	--primary-foreground: 210 20% 98%;
+	--color-primary: hsl(330 81% 60%);
+	--color-primary-foreground: hsl(210 20% 98%);
+	--color-accent: hsl(330 81% 92%);
+	--color-accent-foreground: hsl(330 81% 25%);
 }
 .dark .theme-pink {
-	--primary: 330 81% 52%;
-	--primary-foreground: 210 20% 98%;
+	--color-primary: hsl(330 81% 52%);
+	--color-primary-foreground: hsl(210 20% 98%);
+	--color-accent: hsl(330 81% 22%);
+	--color-accent-foreground: hsl(210 20% 98%);
 }
 
 /* ROSE */
 .theme-rose {
-	--primary: 340 82% 52%;
-	--primary-foreground: 210 20% 98%;
+	--color-primary: hsl(340 82% 52%);
+	--color-primary-foreground: hsl(210 20% 98%);
+	--color-accent: hsl(340 82% 92%);
+	--color-accent-foreground: hsl(340 82% 25%);
 }
 .dark .theme-rose {
-	--primary: 340 82% 45%;
-	--primary-foreground: 210 20% 98%;
+	--color-primary: hsl(340 82% 45%);
+	--color-primary-foreground: hsl(210 20% 98%);
+	--color-accent: hsl(340 82% 22%);
+	--color-accent-foreground: hsl(210 20% 98%);
 }
 
 /* RED */
 .theme-red {
-	--primary: 0 72% 51%;
-	--primary-foreground: 210 20% 98%;
+	--color-primary: hsl(0 72% 51%);
+	--color-primary-foreground: hsl(210 20% 98%);
+	--color-accent: hsl(0 72% 92%);
+	--color-accent-foreground: hsl(0 72% 25%);
 }
 .dark .theme-red {
-	--primary: 0 72% 45%;
-	--primary-foreground: 210 20% 98%;
+	--color-primary: hsl(0 72% 45%);
+	--color-primary-foreground: hsl(210 20% 98%);
+	--color-accent: hsl(0 72% 22%);
+	--color-accent-foreground: hsl(210 20% 98%);
 }
 
 /* INDIGO */
 .theme-indigo {
-	--primary: 231 60% 50%;
-	--primary-foreground: 210 20% 98%;
+	--color-primary: hsl(231 60% 50%);
+	--color-primary-foreground: hsl(210 20% 98%);
+	--color-accent: hsl(231 60% 92%);
+	--color-accent-foreground: hsl(231 60% 25%);
 }
 .dark .theme-indigo {
-	--primary: 231 60% 42%;
-	--primary-foreground: 210 20% 98%;
+	--color-primary: hsl(231 60% 42%);
+	--color-primary-foreground: hsl(210 20% 98%);
+	--color-accent: hsl(231 60% 22%);
+	--color-accent-foreground: hsl(210 20% 98%);
 }
 
 /* CYAN */
 .theme-cyan {
-	--primary: 190 85% 48%;
-	--primary-foreground: 210 20% 98%;
+	--color-primary: hsl(190 85% 48%);
+	--color-primary-foreground: hsl(210 20% 98%);
+	--color-accent: hsl(190 85% 90%);
+	--color-accent-foreground: hsl(190 85% 25%);
 }
 .dark .theme-cyan {
-	--primary: 190 85% 40%;
-	--primary-foreground: 210 20% 98%;
+	--color-primary: hsl(190 85% 40%);
+	--color-primary-foreground: hsl(210 20% 98%);
+	--color-accent: hsl(190 85% 22%);
+	--color-accent-foreground: hsl(210 20% 98%);
 }
 
 /* BROWN */
 .theme-brown {
-	--primary: 25 45% 35%;
-	--primary-foreground: 210 20% 98%;
+	--color-primary: hsl(25 45% 35%);
+	--color-primary-foreground: hsl(210 20% 98%);
+	--color-accent: hsl(25 45% 85%);
+	--color-accent-foreground: hsl(25 45% 20%);
 }
 .dark .theme-brown {
-	--primary: 25 45% 28%;
-	--primary-foreground: 210 20% 98%;
+	--color-primary: hsl(25 45% 28%);
+	--color-primary-foreground: hsl(210 20% 98%);
+	--color-accent: hsl(25 45% 18%);
+	--color-accent-foreground: hsl(210 20% 98%);
 }
 
 /* GRAY */
 .theme-gray {
-	--primary: 220 10% 50%;
-	--primary-foreground: 210 20% 98%;
+	--color-primary: hsl(220 10% 50%);
+	--color-primary-foreground: hsl(210 20% 98%);
+	--color-accent: hsl(220 10% 90%);
+	--color-accent-foreground: hsl(220 10% 25%);
 }
 .dark .theme-gray {
-	--primary: 220 10% 42%;
-	--primary-foreground: 210 20% 98%;
+	--color-primary: hsl(220 10% 42%);
+	--color-primary-foreground: hsl(210 20% 98%);
+	--color-accent: hsl(220 10% 20%);
+	--color-accent-foreground: hsl(210 20% 98%);
 }
 
 /* SLATE */
 .theme-slate {
-	--primary: 215 20% 35%;
-	--primary-foreground: 210 20% 98%;
+	--color-primary: hsl(215 20% 35%);
+	--color-primary-foreground: hsl(210 20% 98%);
+	--color-accent: hsl(215 20% 85%);
+	--color-accent-foreground: hsl(215 20% 20%);
 }
 .dark .theme-slate {
-	--primary: 215 20% 28%;
-	--primary-foreground: 210 20% 98%;
-}
-
-/* BLACK */
-.theme-black {
-	--primary: 0 0% 10%;
-	--primary-foreground: 210 20% 98%;
-}
-.dark .theme-black {
-	--primary: 0 0% 20%;
-	--primary-foreground: 210 20% 98%;
-}
-
-/* WHITE */
-.theme-white {
-	--primary: 0 0% 98%;
-	--primary-foreground: 0 0% 10%;
-}
-.dark .theme-white {
-	--primary: 0 0% 85%;
-	--primary-foreground: 0 0% 10%;
+	--color-primary: hsl(215 20% 28%);
+	--color-primary-foreground: hsl(210 20% 98%);
+	--color-accent: hsl(215 20% 18%);
+	--color-accent-foreground: hsl(210 20% 98%);
 }

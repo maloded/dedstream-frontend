@@ -51,6 +51,10 @@
             }
         }
     },
+    "home": {
+        "streamsHeading": "Канали, які зараз в ефірі",
+        "categoriesHeading": "Категорії, які можуть вас зацікавити"
+    },
     "auth": {
         "register": {
             "heading": "Реєстрація в DedStream",

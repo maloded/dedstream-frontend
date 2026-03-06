@@ -1,21 +1,47 @@
-'use client';
+import { getTranslations } from 'next-intl/server';
 
-import { ChannelAvatar } from '@/components/ui/elements/ChannelAvatar';
+import { StreamsList } from '@/components/features/stream/list/StreamsList';
 
-import { useCurrent } from '@/hooks/useCurrent';
+import {
+	FindRandomStreamsDocument,
+	FindRandomStreamsQuery,
+} from '@/graphql/generated/output';
 
-export default function Home() {
-	const { user, isLoadingProfile } = useCurrent();
+import { SERVER_URL } from '@/libs/constants/url.constants';
+
+async function findRandomStreams() {
+	try {
+		const query = FindRandomStreamsDocument.loc?.source.body;
+		const serverUrl = SERVER_URL ?? 'http://localhost:4000/graphql';
+
+		const response = await fetch(serverUrl, {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			body: JSON.stringify({ query }),
+			next: { revalidate: 30 },
+		});
+
+		const data = await response.json();
+		return {
+			streams: data.data
+				.findRandomStreams as FindRandomStreamsQuery['findRandomStreams'],
+		};
+	} catch (error) {
+		console.error('Error fetching random streams:', error);
+		throw new Error('Failed to fetch random streams');
+	}
+}
+
+export default async function HomePage() {
+	const t = await getTranslations('home');
+
+	const { streams } = (await findRandomStreams()) ?? {};
 
 	return (
-		<div>
-			{isLoadingProfile ? (
-				<div>Loading...</div>
-			) : user ? (
-				<div>JSON.stringify(user)</div>
-			) : (
-				<div>no user</div>
-			)}
+		<div className='space-y-10'>
+			<StreamsList heading={t('streamsHeading')} streams={streams} />
 		</div>
 	);
 }

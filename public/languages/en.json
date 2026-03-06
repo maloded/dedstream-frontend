@@ -51,6 +51,10 @@
             }
         }
     },
+    "home": {
+        "streamsHeading": "Channels that are live now",
+        "categoriesHeading": "Categories you might be interested in"
+    },
     "auth": {
         "register": {
             "heading": "Register at DedStream",

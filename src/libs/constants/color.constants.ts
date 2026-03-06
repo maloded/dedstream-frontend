@@ -18,8 +18,6 @@ export const BASE_COLORS = [
 	{ name: 'brown', color: '25, 45%, 35%' },
 	{ name: 'gray', color: '220, 10%, 50%' },
 	{ name: 'slate', color: '215, 20%, 35%' },
-	{ name: 'black', color: '0, 0%, 10%' },
-	{ name: 'white', color: '0, 0%, 98%' },
 ] as const;
 
 export type TypeBaseColor = (typeof BASE_COLORS)[number]['name'];
