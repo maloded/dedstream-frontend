@@ -55,6 +55,16 @@
         "streamsHeading": "Channels that are live now",
         "categoriesHeading": "Categories you might be interested in"
     },
+    "categories": {
+        "heading": "Categories",
+        "overview": {
+            "heading": "Streams for this category"
+        }
+    },
+    "streams": {
+        "heading": "Streams",
+        "searchHeading": "Search by query"
+    },
     "auth": {
         "register": {
             "heading": "Register at DedStream",
@@ -480,6 +490,10 @@
         },
         "dataTable": {
             "notFound": "No results."
+        },
+        "emptyState": {
+            "heading": "Nothing found",
+            "text": "We've searched every corner of our site, but unfortunately nothing was found for your request. Maybe you could try something else?"
         }
     },
     "utils": {

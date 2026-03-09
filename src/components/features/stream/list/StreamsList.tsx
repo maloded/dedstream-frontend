@@ -1,3 +1,4 @@
+import { EmptyState } from '@/components/ui/elements/EmptyState';
 import { Heading } from '@/components/ui/elements/Heading';
 
 import { type FindRandomStreamsQuery } from '@/graphql/generated/output';
@@ -20,6 +21,6 @@ export function StreamsList({ heading, streams }: StreamsListProps) {
 			</div>
 		</>
 	) : (
-		<div>Not found</div>
+		<EmptyState />
 	);
 }
