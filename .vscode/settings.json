@@ -10,6 +10,7 @@
 		"RTMP",
 		"TOTP",
 		"trivago",
+		"usehooks",
 		"WEBP"
 	],
 	"i18n-ally.localesPaths": ["public/languages", "src/libs/i18n"]

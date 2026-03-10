@@ -65,6 +65,70 @@
         "heading": "Стріми",
         "searchHeading": "Пошук за запитоп"
     },
+    "stream": {
+        "video": {
+            "offline": "Офлайн",
+            "loading": "Підключення...",
+            "player": {
+                "volume": "Гучність",
+                "fullscreen": {
+                    "open": "Повноекранний режим",
+                    "exit": "Вийти з повноекранного режиму"
+                }
+            }
+        },
+        "info": {
+            "viewers": "глядачі",
+            "offline": "Офлайн"
+        },
+        "actions": {
+            "follow": {
+                "confirmUnfollowHeading": "Відписатися",
+                "confirmUnfollowMessage": "Ви більше не будете отримувати сповіщення від цього каналу і він зникне зі списку підписок.",
+                "unfollowButton": "Відписатися",
+                "followButton": "Підписатися",
+                "successFollowMessage": "Ви успішно підписалися",
+                "errorFollowMessage": "Помилка під час підписки",
+                "successUnfollowMessage": "Ви успішно відписалися",
+                "errorUnfollowMessage": "Помилка під час відписки"
+            }
+        },
+        "support": {
+            "alreadySponsor": "Ви вже є спонсором",
+            "supportAuthor": "Підтримати автора",
+            "perMonth": "на місяць",
+            "choose": "Обрати",
+            "errorMessage": "Помилка під час створення платежу"
+        },
+        "share": {
+            "heading": "Поділитися"
+        },
+        "chat": {
+            "heading": "Чат",
+            "unavailable": "Чат недоступний",
+            "unavailableMessage": "Чат недоступний, поки на каналі немає стріму. Будь ласка, зайдіть пізніше!",
+            "loading": "Підключення...",
+            "info": {
+                "authRequired": "Потрібна авторизація",
+                "chatDisabled": "Чат вимкнено",
+                "premiumFollowersOnly": "Тільки для спонсорів",
+                "followersOnly": "Тільки для підписників"
+            },
+            "sendMessage": {
+                "placeholder": "Написати повідомлення",
+                "emojiPlaceholder": "Пошук",
+                "errorMessage": "Помилка під час відправлення повідомлення."
+            }
+        },
+        "aboutChannel": {
+            "heading": "Про канал",
+            "followersCount": "підписників",
+            "noDescription": "Опис не надано."
+        },
+        "sponsors": {
+            "heading": "Спонсори каналу"
+        }
+    },
     "auth": {
         "register": {
             "heading": "Реєстрація в DedStream",
