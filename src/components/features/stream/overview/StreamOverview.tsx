@@ -6,6 +6,9 @@ import { type FindChannelByUsernameQuery } from '@/graphql/generated/output';
 
 import { useStreamToken } from '@/hooks/useStreamToken';
 
+import { AboutChannel, AboutChannelSkeleton } from './info/AboutChannel';
+import { ChannelSponsors } from './info/ChannelSponsors';
+import { StreamInfo, StreamInfoSkeleton } from './info/StreamInfo';
 import { StreamVideo, StreamVideoSkeleton } from './player/StreamVideo';
 
 interface StreamOverviewProps {
@@ -27,6 +30,9 @@ export function StreamOverview({ channel }: StreamOverviewProps) {
 		>
 			<div className='order-1 col-span-1 flex flex-col lg:col-span-5'>
 				<StreamVideo channel={channel} />
+				<StreamInfo channel={channel} />
+				<AboutChannel channel={channel} />
+				<ChannelSponsors channel={channel} />
 			</div>
 			<div className='order-2 col-span-1 flex h-80 flex-col space-y-6 lg:col-span-2'>
 				chat
@@ -40,10 +46,10 @@ export function StreamOverviewSkeleton() {
 		<div className='mx-auto grid max-w-screen-xl grid-cols-1 gap-6 lg:grid-cols-7'>
 			<div className='order-1 col-span-1 flex flex-col lg:col-span-5'>
 				<StreamVideoSkeleton />
+				<StreamInfoSkeleton />
+				<AboutChannelSkeleton />
 			</div>
-			<div className='order-2 col-span-1 flex h-80 flex-col space-y-6 lg:col-span-2'>
-				
-			</div>
+			<div className='order-2 col-span-1 flex h-80 flex-col space-y-6 lg:col-span-2' />
 		</div>
 	);
 }

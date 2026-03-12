@@ -91,17 +91,17 @@
                 "errorFollowMessage": "Error while following",
                 "successUnfollowMessage": "You have successfully unfollowed",
                 "errorUnfollowMessage": "Error while unfollowing"
+            },
+            "support": {
+                "alreadySponsor": "You are already a sponsor",
+                "supportAuthor": "Support the author",
+                "perMonth": "per month",
+                "choose": "Choose",
+                "errorMessage": "Error while creating payment"
+            },
+            "share": {
+                "heading": "Share"
             }
-        },
-        "support": {
-            "alreadySponsor": "You are already a sponsor",
-            "supportAuthor": "Support the author",
-            "perMonth": "per month",
-            "choose": "Choose",
-            "errorMessage": "Error while creating payment"
-        },
-        "share": {
-            "heading": "Share"
         },
         "chat": {
             "heading": "Chat",
@@ -128,6 +128,19 @@
         "sponsors": {
             "heading": "Channel Sponsors"
         }
+    },
+    "success": {
+        "heading": "Payment Successful!",
+        "details": {
+            "heading": "Sponsorship Details:",
+            "price": "Price:",
+            "duration": "Duration:",
+            "channel": "Channel:"
+        },
+        "congratulations": "You now have access to the channel's premium content!",
+        "backToHome": "Back to Home",
+        "backToChannel": "Back to Channel",
+        "support": "If you have any questions, contact our support."
     },
     "auth": {
         "register": {

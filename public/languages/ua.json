@@ -91,17 +91,17 @@
                 "errorFollowMessage": "Помилка під час підписки",
                 "successUnfollowMessage": "Ви успішно відписалися",
                 "errorUnfollowMessage": "Помилка під час відписки"
+            },
+            "support": {
+                "alreadySponsor": "Ви вже є спонсором",
+                "supportAuthor": "Підтримати автора",
+                "perMonth": "на місяць",
+                "choose": "Обрати",
+                "errorMessage": "Помилка під час створення платежу"
+            },
+            "share": {
+                "heading": "Поділитися"
             }
-        },
-        "support": {
-            "alreadySponsor": "Ви вже є спонсором",
-            "supportAuthor": "Підтримати автора",
-            "perMonth": "на місяць",
-            "choose": "Обрати",
-            "errorMessage": "Помилка під час створення платежу"
-        },
-        "share": {
-            "heading": "Поділитися"
         },
         "chat": {
             "heading": "Чат",
@@ -128,6 +128,19 @@
         "sponsors": {
             "heading": "Спонсори каналу"
         }
+    },
+    "success": {
+        "heading": "Оплата успішна!",
+        "details": {
+            "heading": "Деталі спонсорства:",
+            "price": "Ціна:",
+            "duration": "Тривалість:",
+            "channel": "Канал:"
+        },
+        "congratulations": "Тепер у вас є доступ до преміум-контенту каналу!",
+        "backToHome": "Назад на головну",
+        "backToChannel": "Назад до каналу",
+        "support": "Якщо у вас є питання, зв'яжіться з нашою підтримкою."
     },
     "auth": {
         "register": {

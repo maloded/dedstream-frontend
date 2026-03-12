@@ -3,7 +3,6 @@
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import { Controller, useForm } from 'react-hook-form';
 import { toast } from 'sonner';
@@ -36,8 +35,6 @@ export function LoginForm() {
 
 	const { auth } = useAuth();
 
-	const router = useRouter();
-
 	const [isShowTwoFactor, setIsShowTwoFactor] = useState(false);
 
 	const form = useForm<TypeLoginSchema>({
@@ -55,7 +52,7 @@ export function LoginForm() {
 			} else {
 				auth();
 				toast.success(t('successMessage'));
-				router.push('/dashboard/settings');
+				window.location.href = '/dashboard/settings'
 			}
 		},
 		onError() {

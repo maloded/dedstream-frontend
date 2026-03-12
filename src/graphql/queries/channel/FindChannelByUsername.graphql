@@ -7,8 +7,26 @@ query FindChannelByUsername($username: String!) {
 		avatar
 		updatedAt
 		isVerified
+		socialLinks {
+			title
+			url
+		}
 		stream {
+			title
 			thumbnailUrl
+			isLive
+			category {
+				title
+			}
+		}
+		sponsorshipPlans {
+			id
+			title
+			description
+			price
+		}
+		followings {
+			id
 		}
 	}
 }
