@@ -1,8 +1,10 @@
-import { InMemoryCache } from '@apollo/client';
+import { HttpLink, InMemoryCache, split } from '@apollo/client';
 import { ApolloClient } from '@apollo/client';
+import { WebSocketLink } from '@apollo/client/link/ws';
+import { getMainDefinition } from '@apollo/client/utilities';
 import { createUploadLink } from 'apollo-upload-client';
 
-import { SERVER_URL } from './constants/url.constants';
+import { SERVER_URL, WEBSOCKET_URL } from './constants/url.constants';
 
 const uploadLink = createUploadLink({
 	uri: SERVER_URL,
@@ -12,7 +14,27 @@ const uploadLink = createUploadLink({
 	},
 });
 
+const wsLink = new WebSocketLink({
+	uri: WEBSOCKET_URL || '',
+	options: {
+		reconnect: true,
+	},
+});
+
+const splitLink = split(
+	({ query }) => {
+		const definition = getMainDefinition(query);
+
+		return (
+			definition.kind === 'OperationDefinition' &&
+			definition.operation === 'subscription'
+		);
+	},
+	wsLink,
+	uploadLink,
+);
+
 export const client = new ApolloClient({
-	link: uploadLink,
+	link: splitLink,
 	cache: new InMemoryCache(),
 });
