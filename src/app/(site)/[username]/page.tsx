@@ -24,7 +24,7 @@ async function findChannelByUsername(params: { username: string }) {
 				'Content-Type': 'application/json',
 			},
 			body: JSON.stringify({ query, variables }),
-			next: { revalidate: 30 },
+			cache: 'no-store'
 		});
 
 		const data = await response.json();

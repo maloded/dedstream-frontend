@@ -5,6 +5,7 @@ import { type FindChannelByUsernameQuery } from '@/graphql/generated/output';
 import { FollowButton } from './FollowButton';
 import { ShareActions } from './ShareActions';
 import { SupportButton } from './SupportButton';
+import { StreamSettings } from '../../settings/StreamSettings';
 
 interface StreamActionsProps {
 	channel: FindChannelByUsernameQuery['findChannelByUsername'];
@@ -17,6 +18,7 @@ export function StreamActions({ channel }: StreamActionsProps) {
 			{channel.isVerified && channel.sponsorshipPlans.length && (
 				<SupportButton channel={channel} />
 			)}
+			<StreamSettings channel={channel}/>
 			<ShareActions channel={channel} />
 		</div>
 	);
