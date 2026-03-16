@@ -168,6 +168,10 @@
         "backToChannel": "Назад до каналу",
         "support": "Якщо у вас є питання, зв'яжіться з нашою підтримкою."
     },
+    "notFound": {
+        "description": "Упс, щось пішло не так",
+        "backHome": "Назад на головну"
+    },
     "auth": {
         "register": {
             "heading": "Реєстрація в DedStream",

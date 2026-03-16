@@ -168,6 +168,10 @@
         "backToChannel": "Back to Channel",
         "support": "If you have any questions, contact our support."
     },
+    "notFound": {
+        "description": "Oops, something went wrong.",
+        "backHome": "Back to Home"
+    },
     "auth": {
         "register": {
             "heading": "Register at DedStream",
