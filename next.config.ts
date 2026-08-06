@@ -4,10 +4,16 @@ import createNextIntlPlugin from 'next-intl/plugin';
 const withNextIntl = createNextIntlPlugin('./src/libs/i18n/request.ts');
 
 const nextConfig: NextConfig = {
-	reactStrictMode: true,
-	images: {
-		domains: ['dedstream.gmhost.space'], 
-	},
+    reactStrictMode: true,
+    images: {
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'dedstream.gmhost.space',
+                pathname: '/**',
+            },
+        ],
+    },
 };
 
 export default withNextIntl(nextConfig);
